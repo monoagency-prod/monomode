@@ -229,26 +229,29 @@ document.addEventListener('DOMContentLoaded', () => {
                 localStorage.setItem('monomode-leads', JSON.stringify(existing));
             } catch(err) {}
 
-            // Отправляем форму на сервер Netlify
-            const quizForm = document.getElementById('quizForm');
-            if (quizForm) {
-                const formData = new FormData(quizForm);
-                formData.set('form-name', 'quiz-leads');
-                formData.set('goal', quizData.goal || '');
-                formData.set('idea', quizData.idea || '');
-                formData.set('channel', quizData.channelType || '');
-                formData.set('contact', quizData.contact || '');
+            // Отправляем заявку на почту monomode.agency@gmail.com через Web3Forms
+            const payload = {
+                access_key: '17910251-e6b0-4fd5-82e5-389dd2ccc7ec',
+                subject: '🔥 Новая заявка на проект MONOMODE!',
+                from_name: 'Сайт MONOMODE',
+                'Цель обращения': quizData.goal || 'Не указано',
+                'Описание идеи': quizData.idea || 'Не указано',
+                'Способ связи': quizData.channelType || 'Telegram',
+                'Контакт клиента': quizData.contact || ''
+            };
 
-                fetch('/', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                    body: new URLSearchParams(formData).toString()
-                }).then(() => {
-                    console.log('✅ Заявка успешно доставлена в Netlify Forms');
-                }).catch(err => {
-                    console.warn('⚠️ Ошибка сети при отправке:', err);
-                });
-            }
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify(payload)
+            }).then(res => res.json()).then(data => {
+                console.log('✅ Письмо успешно отправлено на monomode.agency@gmail.com:', data);
+            }).catch(err => {
+                console.warn('⚠️ Ошибка отправки на почту:', err);
+            });
 
             // Показываем экран успеха
             updateStepView('success');
