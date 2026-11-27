@@ -45,6 +45,8 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 body {
@@ -54,6 +56,7 @@ body {
     line-height: 1.55;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
+    width: 100%;
     transition: background-color 0.25s ease, color 0.25s ease;
 }
 
@@ -81,22 +84,30 @@ button {
     padding: 0 32px;
 }
 
-/* ================= НАВИГАЦИЯ (СТАРЫЙ ЧИСТЫЙ ФОРМАТ) ================= */
+/* ================= НАВИГАЦИЯ (СТАРЫЙ ЧИСТЫЙ ФОРМАТ, ВЫРОВНЕНА ПО СЕТКЕ) ================= */
 .nav {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     height: 70px;
-    padding: 0 32px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     background: var(--nav-bg);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
     border-bottom: 1px solid var(--line);
     z-index: 1000;
+}
+
+.nav__inner {
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .nav__logo {
@@ -105,18 +116,20 @@ button {
     font-size: 1.15rem;
     letter-spacing: 0.14em;
     text-transform: uppercase;
+    white-space: nowrap;
 }
 
 .nav__links {
     display: flex;
     align-items: center;
-    gap: 28px;
+    gap: 24px;
 }
 
 .nav__links a {
     font-size: 0.88rem;
     font-weight: 500;
     color: var(--text-muted);
+    white-space: nowrap;
     transition: color 0.2s ease;
 }
 
@@ -261,7 +274,6 @@ button {
 
 /* ================= HERO (ARCHIVE EDITORIAL STYLE) ================= */
 .hero {
-    min-height: 100vh;
     padding-top: 70px;
     display: flex;
     flex-direction: column;
@@ -273,12 +285,10 @@ button {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 56px 32px 48px;
-    flex: 1;
+    padding: 48px 32px 56px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 40px;
+    gap: 36px;
 }
 
 .hero__meta {
@@ -289,34 +299,34 @@ button {
     font-size: 0.78rem;
     letter-spacing: 0.08em;
     color: var(--text-muted);
-    padding-bottom: 20px;
+    padding-bottom: 18px;
     border-bottom: 1px solid var(--line);
 }
 
 .hero__title {
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 700;
-    font-size: clamp(4.2rem, 13.5vw, 11.5rem);
-    line-height: 0.9;
+    font-size: clamp(3.8rem, 12.5vw, 10.5rem);
+    line-height: 0.92;
     letter-spacing: -0.04em;
     text-transform: uppercase;
     text-align: center;
-    margin: 24px 0;
+    margin: 18px 0;
     user-select: none;
 }
 
 .hero__bottom {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
     gap: 32px;
-    padding-top: 28px;
+    padding-top: 26px;
     border-top: 1px solid var(--line);
 }
 
 .hero__desc {
     max-width: 560px;
-    font-size: 1.05rem;
+    font-size: 1.02rem;
     color: var(--text-muted);
     line-height: 1.6;
 }
@@ -326,6 +336,7 @@ button {
     align-items: center;
     gap: 12px;
     flex-wrap: wrap;
+    flex-shrink: 0;
 }
 
 /* ================= БЕГУЩАЯ СТРОКА ================= */
@@ -1085,6 +1096,28 @@ button {
 
 /* ================= АДАПТИВНОСТЬ ================= */
 @media (max-width: 1024px) {
+    .nav__links {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: var(--bg);
+        border-bottom: 1px solid var(--line);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px 32px;
+        gap: 18px;
+        display: none;
+    }
+
+    .nav__links.open {
+        display: flex;
+    }
+
+    .nav__burger {
+        display: flex;
+    }
+
     .arch-grid--4 {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1115,26 +1148,12 @@ button {
 }
 
 @media (max-width: 768px) {
-    .nav {
+    .nav__inner {
         padding: 0 20px;
     }
 
     .nav__links {
-        position: fixed;
-        top: 70px;
-        left: 0;
-        right: 0;
-        background: var(--bg);
-        border-bottom: 1px solid var(--line);
-        flex-direction: column;
-        align-items: flex-start;
         padding: 24px 20px;
-        gap: 18px;
-        display: none;
-    }
-
-    .nav__links.open {
-        display: flex;
     }
 
     .nav__cta {
