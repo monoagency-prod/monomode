@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MONOMODE — Сайты и продвижение брендов одежды</title>
-    <meta name="description" content="MONOMODE — digital-агентство для брендов одежды, стритвира и мерча. Создаем продающие интернет-магазины, оформляем соцсети, разрабатываем логотипы и запускаем бренды под ключ.">
-    <meta name="keywords" content="сайт для бренда одежды, разработка интернет магазина одежды, продвижение стритвир, запуск бренда одежды под ключ, дизайн принтов мерч">
+    <title>MONOMODE — Сайты и магазины для брендов одежды</title>
+    <meta name="description" content="MONOMODE — digital-агентство для брендов одежды. Создаем интернет-магазины, витрины Telegram MiniApp и визуальную упаковку под ключ.">
+    <meta name="keywords" content="сайт для бренда одежды, разработка интернет магазина одежды, telegram miniapp магазин, упаковка бренда одежды, дизайн принтов">
     <link rel="canonical" href="https://monomode.ru/">
-    
-    <!-- Favicon / Логотип во вкладке браузера -->
+
+    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="shortcut icon" href="favicon.ico">
-    
-    <!-- Open Graph (для красивого шеринга в Telegram, VK, WhatsApp) -->
-    <meta property="og:title" content="MONOMODE — Сайты и продвижение брендов одежды">
-    <meta property="og:description" content="Создаем продающие интернет-магазины, оформляем соцсети и упаковываем бренды одежды под ключ.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="MONOMODE — Сайты и магазины для брендов одежды">
+    <meta property="og:description" content="Создаем интернет-магазины, витрины Telegram MiniApp и визуальную упаковку для брендов одежды под ключ.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://monomode.ru/">
 
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -35,20 +35,17 @@
         </div>
         <div class="nav__links">
             <a href="#about">О нас</a>
-            <a href="#showcase">Что оформляем</a>
             <a href="#services">Услуги и цены</a>
             <a href="#steps">Процесс работы</a>
             <a href="#guarantee">Гарантии</a>
             <a href="#contact">Контакты</a>
         </div>
         <div class="nav__actions">
-            <!-- Кнопка Telegram-канала: только аккуратная иконка в размер кнопки темы -->
             <a href="https://t.me/monomode_agency" target="_blank" rel="noopener" class="nav__tg-btn" title="Telegram-канал @monomode_agency" aria-label="Telegram-канал">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
                 </svg>
             </a>
-            <!-- Переключатель светлой и темной темы -->
             <button class="theme-toggle" id="themeToggle" aria-label="Сменить тему оформления" title="Сменить тему оформления">
                 <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="12" cy="12" r="5"></circle>
@@ -74,425 +71,330 @@
     </nav>
 
     <!-- Первый экран -->
-    <section class="hero">
-        <div class="hero__badge">digital-агентство для брендов одежды</div>
-        <h1 class="hero__title">
-            <span class="hero__word">MONO</span>
-            <span class="hero__word hero__word--accent">MODE</span>
-        </h1>
-        <p class="hero__desc">
-            Создаем стильные интернет-магазины, упаковываем соцсети и приводим покупателей для брендов одежды. Берем на себя весь digital, чтобы вы занимались развитием коллекций.
-        </p>
-
-        <!-- Стильный блок действий вместо банальных кнопок -->
-        <div class="hero__cta-wrapper">
-            <button class="hero-launch-btn open-modal-btn">
-                <span class="hero-launch-btn__glow"></span>
-                <span class="hero-launch-btn__text">Обсудить ваш проект</span>
-                <span class="hero-launch-btn__arrow">→</span>
-            </button>
-            <a href="#services" class="hero-scroll-btn">
-                <span>Тарифы и работы</span>
-                <span class="hero-scroll-btn__icon">↓</span>
-            </a>
-        </div>
-
-        <div class="hero__trust-strip">
-            <div class="trust-mini">
-                <span class="trust-mini__num">0 ₽</span>
-                <span class="trust-mini__text">первый разбор идеи</span>
+    <header class="hero">
+        <div class="hero__inner">
+            <div class="hero__meta">
+                <span>[ DIGITAL-АГЕНТСТВО ДЛЯ БРЕНДОВ ОДЕЖДЫ ]</span>
+                <span class="hero__coords">EST. 2026 // RU</span>
             </div>
-            <div class="trust-mini__sep">•</div>
-            <div class="trust-mini">
-                <span class="trust-mini__num">100%</span>
-                <span class="trust-mini__text">прозрачные условия</span>
-            </div>
-            <div class="trust-mini__sep">•</div>
-            <div class="trust-mini">
-                <span class="trust-mini__num">от 3 дней</span>
-                <span class="trust-mini__text">первые результаты</span>
+
+            <h1 class="hero__title">MONOMODE</h1>
+
+            <div class="hero__bottom">
+                <p class="hero__desc">
+                    Создаем быстрые интернет-магазины, витрины Telegram MiniApp и визуальную упаковку для брендов одежды. Берем на себя всю техническую часть и дизайн, чтобы вы занимались продуктом.
+                </p>
+                <div class="hero__actions">
+                    <button class="btn btn--primary open-modal-btn">Обсудить проект ↗</button>
+                    <a href="#services" class="btn btn--secondary">Услуги и цены ↓</a>
+                </div>
             </div>
         </div>
-    </section>
 
-    <!-- Бегущая строка -->
-    <div class="ticker">
-        <div class="ticker__track">
-            <span>САЙТЫ ДЛЯ БРЕНДОВ ОДЕЖДЫ ✦ ПРОДВИЖЕНИЕ В СОЦСЕТЯХ ✦ РЕКЛАМА И КЛИЕНТЫ ✦ ДИЗАЙН ПРИНТОВ ✦ ОФОРМЛЕНИЕ МАГАЗИНА ✦ ТЕЛЕГРАМ-БОТЫ ✦ </span>
-            <span>САЙТЫ ДЛЯ БРЕНДОВ ОДЕЖДЫ ✦ ПРОДВИЖЕНИЕ В СОЦСЕТЯХ ✦ РЕКЛАМА И КЛИЕНТЫ ✦ ДИЗАЙН ПРИНТОВ ✦ ОФОРМЛЕНИЕ МАГАЗИНА ✦ ТЕЛЕГРАМ-БОТЫ ✦ </span>
+        <!-- Бегущая строка -->
+        <div class="ticker">
+            <div class="ticker__track">
+                <span>TELEGRAM MINIAPP МАГАЗИНЫ • САЙТЫ ДЛЯ ДРОПОВ ОДЕЖДЫ • ОПЛАТА СБП И КАРТАМИ В 1 КЛИК • АВТО-РАСЧЕТ СДЭК И ПОЧТА • НИКАКОЙ РУТИНЫ В ЛИЧКЕ • </span>
+                <span>TELEGRAM MINIAPP МАГАЗИНЫ • САЙТЫ ДЛЯ ДРОПОВ ОДЕЖДЫ • ОПЛАТА СБП И КАРТАМИ В 1 КЛИК • АВТО-РАСЧЕТ СДЭК И ПОЧТА • НИКАКОЙ РУТИНЫ В ЛИЧКЕ • </span>
+            </div>
         </div>
-    </div>
+    </header>
 
-    <!-- Чем мы занимаемся (О нас) -->
-    <section id="about" class="section about">
+    <!-- 01 // О нас -->
+    <section id="about" class="section">
         <div class="container">
             <div class="section-head">
-                <span class="section-tag">[ ЧЕМ МЫ ЗАНИМАЕМСЯ ]</span>
-                <h2>Помогаем вашему бренду выделиться и продавать</h2>
-                <p>Мы выстраиваем простую и понятную систему, которая привлекает покупателей на ваш сайт и в соцсети.</p>
+                <span class="section-tag">[ 01 // О НАС ]</span>
+                <h2>Минималистичная упаковка, которая продает</h2>
+                <p>Выстраиваем понятную цифровую витрину без лишнего шума, чтобы покупатель легко выбирал вещь и оформлял заказ.</p>
             </div>
 
-            <div class="about-grid">
-                <div class="about-card about-card--big">
-                    <span class="card-num">01</span>
-                    <h3>Сайты и интернет-магазины одежды</h3>
-                    <p>Создаем быстрые, стильные сайты, адаптированные под смартфоны. Ваши покупатели смогут удобно выбрать размер, посмотреть вещь и оплатить покупку в пару кликов через СБП или банковской картой.</p>
-                    <ul class="clean-list">
-                        <li>Каталог с фильтром по размерам и цветам</li>
-                        <li>Удобная быстрая корзина без лишних полей</li>
-                        <li>Мгновенные уведомления о заказах в Telegram</li>
-                    </ul>
+            <div class="arch-grid arch-grid--4">
+                <div class="arch-cell">
+                    <div class="arch-cell__top">
+                        <span class="mono-num">01</span>
+                        <span class="mono-label">WEB STORE</span>
+                    </div>
+                    <h3>Сайты и каталоги</h3>
+                    <p>Быстрые магазины с фильтром по размерам, удобной корзиной, оплатой через СБП и расчетом доставки СДЭК.</p>
                 </div>
 
-                <div class="about-card">
-                    <span class="card-num">02</span>
-                    <h3>Продвижение и реклама</h3>
-                    <p>Привлекаем живую аудиторию, которая любит стильную одежду: через рилсы, клипы, инфлюенсеров и точечную рекламу.</p>
+                <div class="arch-cell">
+                    <div class="arch-cell__top">
+                        <span class="mono-num">02</span>
+                        <span class="mono-label">MINIAPP</span>
+                    </div>
+                    <h3>Telegram MiniApp</h3>
+                    <p>Витрина прямо внутри вашего Telegram-канала. Клиент выбирает размер и оплачивает заказ в одном окне.</p>
                 </div>
 
-                <div class="about-card">
-                    <span class="card-num">03</span>
-                    <h3>Дизайн и визуальный стиль</h3>
-                    <p>Разрабатываем лаконичный логотип, оформление профилей в соцсетях, бирки для одежды и упаковку заказов.</p>
+                <div class="arch-cell">
+                    <div class="arch-cell__top">
+                        <span class="mono-num">03</span>
+                        <span class="mono-label">IDENTITY</span>
+                    </div>
+                    <h3>Дизайн и стиль</h3>
+                    <p>Логотипы, графика для принтов, оформление профилей соцсетей, размерные сетки и макеты бирок.</p>
                 </div>
 
-                <div class="about-card">
-                    <span class="card-num">04</span>
-                    <h3>Запуск бренда с нуля</h3>
-                    <p>Если вы только на старте — соберем все воедино: от концепции и витрины до первых оформленных заказов.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Премиальная витрина форматов упаковки -->
-    <section id="showcase" class="section showcase">
-        <div class="container">
-            <div class="section-head text-center">
-                <span class="section-tag">[ ВИТРИНА ]</span>
-                <h2>Как выглядит оформление коллекций</h2>
-                <p>Разрабатываем профессиональную цифровую подачу для каждого типа одежды вашего бренда</p>
-            </div>
-
-            <div class="showcase-grid">
-                <!-- Карточка 1: Худи -->
-                <div class="showcase-card">
-                    <div class="showcase-card__visual">
-                        <div class="mockup-label">LOOKBOOK 01</div>
-                        <div class="mockup-hero-text">HOODIE</div>
-                        <div class="mockup-meta">OVERSIZED FIT // HEAVYWEIGHT</div>
+                <div class="arch-cell">
+                    <div class="arch-cell__top">
+                        <span class="mono-num">04</span>
+                        <span class="mono-label">TURNKEY</span>
                     </div>
-                    <div class="showcase-card__body">
-                        <h4>Худи и толстовки</h4>
-                        <p>Индивидуальные карточки товаров, лукбук-презентация, показ деталей ткани и посадки</p>
-                        <div class="showcase-tags">
-                            <span>Карточка товара</span>
-                            <span>Лукбук</span>
-                            <span>Таблица замеров</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Карточка 2: Футболки -->
-                <div class="showcase-card">
-                    <div class="showcase-card__visual">
-                        <div class="mockup-label">LOOKBOOK 02</div>
-                        <div class="mockup-hero-text">T-SHIRT</div>
-                        <div class="mockup-meta">BOXY CUT // GRAPHIC PRINT</div>
-                    </div>
-                    <div class="showcase-card__body">
-                        <h4>Футболки и лонгсливы</h4>
-                        <p>Презентация авторских принтов, размерные таблицы и стилизация в каталоге</p>
-                        <div class="showcase-tags">
-                            <span>Принты</span>
-                            <span>Размерная сетка</span>
-                            <span>Каталог</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Карточка 3: Куртки -->
-                <div class="showcase-card">
-                    <div class="showcase-card__visual">
-                        <div class="mockup-label">LOOKBOOK 03</div>
-                        <div class="mockup-hero-text">OUTER</div>
-                        <div class="mockup-meta">ZIP-JACKETS // PUFFERS</div>
-                    </div>
-                    <div class="showcase-card__body">
-                        <h4>Верхняя одежда и куртки</h4>
-                        <p>Фокус на фактуре материалов, качественной фурнитуре и сезонных релизах</p>
-                        <div class="showcase-tags">
-                            <span>Фурнитура</span>
-                            <span>Детализация</span>
-                            <span>Видеообзор</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Карточка 4: Брюки -->
-                <div class="showcase-card">
-                    <div class="showcase-card__visual">
-                        <div class="mockup-label">LOOKBOOK 04</div>
-                        <div class="mockup-hero-text">PANTS</div>
-                        <div class="mockup-meta">CARGO & JOGGERS // WIDE</div>
-                    </div>
-                    <div class="showcase-card__body">
-                        <h4>Штаны и брюки-карго</h4>
-                        <p>Демонстрация кроя, посадки по фигуре и готовых сочетаний образов</p>
-                        <div class="showcase-tags">
-                            <span>Посадка</span>
-                            <span>Образы</span>
-                            <span>Фотосессия</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Карточка 5: Аксессуары -->
-                <div class="showcase-card">
-                    <div class="showcase-card__visual">
-                        <div class="mockup-label">LOOKBOOK 05</div>
-                        <div class="mockup-hero-text">MERCH</div>
-                        <div class="mockup-meta">CAPS // BAGS // DROPS</div>
-                    </div>
-                    <div class="showcase-card__body">
-                        <h4>Кепки, мерч и аксессуары</h4>
-                        <p>Оформление лимитированных тиражей, фирменных бирок и мелких серий</p>
-                        <div class="showcase-tags">
-                            <span>Мерч</span>
-                            <span>Аксессуары</span>
-                            <span>Быстрый заказ</span>
-                        </div>
-                    </div>
+                    <h3>Запуск с нуля</h3>
+                    <p>Собираем новый бренд одежды целиком: от концепции и айдентики до готового приема первых заказов.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Услуги и цены -->
-    <section id="services" class="section services">
+    <!-- 02 // Услуги и цены -->
+    <section id="services" class="section">
         <div class="container">
             <div class="section-head">
-                <span class="section-tag">[ УСЛУГИ И ЦЕНЫ ]</span>
-                <h2>Понятная стоимость без скрытых платежей</h2>
-                <p>Доступные тарифы для тех, кто запускает свой бренд и ценит прозрачность.</p>
+                <span class="section-tag">[ 02 // УСЛУГИ И ЦЕНЫ ]</span>
+                <h2>Прозрачная стоимость без скрытых доплат</h2>
+                <p>Выберите отдельную задачу или комплексное решение для запуска вашего бренда.</p>
             </div>
 
-            <div class="services-table">
-                <!-- Услуга 1 -->
-                <div class="service-item">
-                    <div class="service-item__left">
-                        <span class="service-num">01</span>
-                        <div>
-                            <h3>Сайт-каталог для бренда одежды</h3>
-                            <p>Красивый и быстрый сайт, где покупатель видит вещи, выбирает нужный размер, способ доставки и сразу оплачивает заказ.</p>
-                        </div>
+            <div class="services-grid">
+                <!-- 1 -->
+                <div class="srv-card">
+                    <div class="srv-card__head">
+                        <span class="mono-num">01</span>
+                        <span class="srv-tag">САЙТ</span>
                     </div>
-                    <div class="service-item__price">от 8.000 ₽</div>
+                    <h3>Сайт-каталог для бренда одежды</h3>
+                    <p>Индивидуальный магазин с каталогом, выбором размеров, корзиной и подключением онлайн-оплаты.</p>
+                    <div class="srv-card__foot">
+                        <span class="srv-price">от 8.000 ₽</span>
+                        <button class="srv-btn open-modal-btn">Заказать ↗</button>
+                    </div>
                 </div>
 
-                <!-- Услуга 2 -->
-                <div class="service-item">
-                    <div class="service-item__left">
-                        <span class="service-num">02</span>
-                        <div>
-                            <h3>Telegram-магазин для приёма заказов</h3>
-                            <p>Удобный каталог прямо внутри мессенджера Telegram. Клиент оформляет и оплачивает заказ не выходя из переписки.</p>
-                        </div>
+                <!-- 2 -->
+                <div class="srv-card">
+                    <div class="srv-card__head">
+                        <span class="mono-num">02</span>
+                        <span class="srv-tag">TELEGRAM</span>
                     </div>
-                    <div class="service-item__price">от 5.000 ₽</div>
+                    <h3>Telegram-магазин MiniApp</h3>
+                    <p>Полноценная витрина внутри Telegram без перехода в браузер. Мгновенные уведомления о заказах.</p>
+                    <div class="srv-card__foot">
+                        <span class="srv-price">от 5.000 ₽</span>
+                        <button class="srv-btn open-modal-btn">Заказать ↗</button>
+                    </div>
                 </div>
 
-                <!-- Услуга 3 -->
-                <div class="service-item">
-                    <div class="service-item__left">
-                        <span class="service-num">03</span>
-                        <div>
-                            <h3>Оформление и упаковка соцсетей</h3>
-                            <p>Аватарка, актуальные истории, баннеры, шаблоны для постов и карточки товаров в едином стильном виде.</p>
-                        </div>
+                <!-- 3 -->
+                <div class="srv-card">
+                    <div class="srv-card__head">
+                        <span class="mono-num">03</span>
+                        <span class="srv-tag">СОЦСЕТИ</span>
                     </div>
-                    <div class="service-item__price">от 4.000 ₽</div>
+                    <h3>Оформление соцсетей</h3>
+                    <p>Аватарка, обложки, шаблоны для постов и анонсов, карточки товаров в едином стиле бренда.</p>
+                    <div class="srv-card__foot">
+                        <span class="srv-price">от 4.000 ₽</span>
+                        <button class="srv-btn open-modal-btn">Заказать ↗</button>
+                    </div>
                 </div>
 
-                <!-- Услуга 4 -->
-                <div class="service-item">
-                    <div class="service-item__left">
-                        <span class="service-num">04</span>
-                        <div>
-                            <h3>Дизайн логотипа и фирменного стиля</h3>
-                            <p>Создаем запоминающийся логотип, подбираем цвета, шрифты и готовим макеты стильных бирок и наклеек.</p>
-                        </div>
+                <!-- 4 -->
+                <div class="srv-card">
+                    <div class="srv-card__head">
+                        <span class="mono-num">04</span>
+                        <span class="srv-tag">АЙДЕНТИКА</span>
                     </div>
-                    <div class="service-item__price">от 5.000 ₽</div>
+                    <h3>Дизайн логотипа и стиля</h3>
+                    <p>Разработка логотипа, подбор шрифтов и палитры, подготовка макетов бирок и упаковки.</p>
+                    <div class="srv-card__foot">
+                        <span class="srv-price">от 5.000 ₽</span>
+                        <button class="srv-btn open-modal-btn">Заказать ↗</button>
+                    </div>
                 </div>
 
-                <!-- Услуга 5 -->
-                <div class="service-item">
-                    <div class="service-item__left">
-                        <span class="service-num">05</span>
-                        <div>
-                            <h3>Дизайн принтов для коллекций</h3>
-                            <p>Разработка стильных графических принтов для футболок, худи и свитшотов под печать на ткани.</p>
-                        </div>
+                <!-- 5 -->
+                <div class="srv-card">
+                    <div class="srv-card__head">
+                        <span class="mono-num">05</span>
+                        <span class="srv-tag">ГРАФИКА</span>
                     </div>
-                    <div class="service-item__price">от 2.500 ₽</div>
+                    <h3>Дизайн принтов</h3>
+                    <p>Авторская графика для футболок, худи и свитшотов, полностью подготовленная под печать на ткани.</p>
+                    <div class="srv-card__foot">
+                        <span class="srv-price">от 2.500 ₽</span>
+                        <button class="srv-btn open-modal-btn">Заказать ↗</button>
+                    </div>
                 </div>
 
-                <!-- Услуга 6 (Комплекс) -->
-                <div class="service-item service-item--featured">
-                    <div class="service-item__left">
-                        <span class="service-num">★</span>
-                        <div>
-                            <h3>Запуск бренда одежды «под ключ»</h3>
-                            <p>Полный комплект: логотип + готовый продающий сайт + упаковка всех соцсетей + стратегия первых продаж.</p>
-                        </div>
+                <!-- 6 -->
+                <div class="srv-card">
+                    <div class="srv-card__head">
+                        <span class="mono-num">06</span>
+                        <span class="srv-tag">ОБНОВЛЕНИЕ</span>
                     </div>
-                    <div class="service-item__price">от 22.000 ₽</div>
+                    <h3>Аудит и редизайн</h3>
+                    <p>Обновляем устаревший сайт или витрину, улучшаем мобильную версию и убираем лишние шаги при покупке.</p>
+                    <div class="srv-card__foot">
+                        <span class="srv-price">от 4.500 ₽</span>
+                        <button class="srv-btn open-modal-btn">Заказать ↗</button>
+                    </div>
+                </div>
+
+                <!-- 7 (★ Комплекс) -->
+                <div class="srv-card srv-card--featured">
+                    <div class="srv-card__info">
+                        <div class="srv-card__head">
+                            <span class="mono-num">★</span>
+                            <span class="srv-tag">КОМПЛЕКС</span>
+                        </div>
+                        <h3>Запуск бренда одежды «под ключ»</h3>
+                        <p>Полный комплект для старта: логотип и стиль + готовый сайт или MiniApp-магазин + оформление соцсетей.</p>
+                    </div>
+                    <div class="srv-card__foot srv-card__foot--featured">
+                        <span class="srv-price">от 22.000 ₽</span>
+                        <button class="btn btn--primary open-modal-btn">Обсудить запуск ↗</button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Как мы работаем: Удобный читаемый линейный процесс -->
-    <section id="steps" class="section steps">
+    <!-- 03 // Процесс работы -->
+    <section id="steps" class="section">
         <div class="container">
-            <div class="section-head text-center">
-                <span class="section-tag">[ ПРОЦЕСС РАБОТЫ ]</span>
-                <h2>4 простых шага до первых продаж</h2>
-                <p>Последовательный и понятный маршрут от первой мысли до приема платежей</p>
+            <div class="section-head">
+                <span class="section-tag">[ 03 // ПРОЦЕСС РАБОТЫ ]</span>
+                <h2>4 понятных этапа до запуска</h2>
+                <p>Фиксируем сроки и стоимость на старте, показываем промежуточные макеты и передаем все доступы.</p>
             </div>
 
-            <div class="steps-timeline">
-                <!-- Шаг 1 -->
-                <div class="step-card">
-                    <div class="step-card__top">
-                        <span class="step-num">01</span>
-                        <span class="step-label">ОБСУЖДЕНИЕ</span>
+            <div class="arch-grid arch-grid--4">
+                <div class="arch-cell">
+                    <div class="arch-cell__top">
+                        <span class="mono-num">01</span>
+                        <span class="mono-label">ОБСУЖДЕНИЕ</span>
                     </div>
-                    <h4>Обсуждаем вашу идею</h4>
-                    <p>Вы рассказываете, какую одежду хотите продавать и кому. Мы подбираем формат и фиксируем точную смету.</p>
+                    <h3>Разбираем задачу</h3>
+                    <p>Изучаем ваш бренд, формат вещей и целевую аудиторию. Подбираем решение и фиксируем точную смету.</p>
                 </div>
 
-                <!-- Шаг 2 -->
-                <div class="step-card">
-                    <div class="step-card__top">
-                        <span class="step-num">02</span>
-                        <span class="step-label">МАКЕТЫ</span>
+                <div class="arch-cell">
+                    <div class="arch-cell__top">
+                        <span class="mono-num">02</span>
+                        <span class="mono-label">МАКЕТЫ</span>
                     </div>
-                    <h4>Делаем первые макеты</h4>
-                    <p>Показываем варианты оформления и структуру сайта. Вы вносите пожелания, и мы утверждаем финальный вид.</p>
+                    <h3>Создаем концепт</h3>
+                    <p>Готовим структуру и визуальный стиль. Вместе вносим правки и утверждаем финальный дизайн.</p>
                 </div>
 
-                <!-- Шаг 3 -->
-                <div class="step-card">
-                    <div class="step-card__top">
-                        <span class="step-num">03</span>
-                        <span class="step-label">НАСТРОЙКА</span>
+                <div class="arch-cell">
+                    <div class="arch-cell__top">
+                        <span class="mono-num">03</span>
+                        <span class="mono-label">СБОРКА</span>
                     </div>
-                    <h4>Собираем и настраиваем</h4>
-                    <p>Верстаем сайт, подключаем прием платежей, загружаем ваши вещи и оформляем страницы в соцсетях.</p>
+                    <h3>Настраиваем систему</h3>
+                    <p>Верстаем сайт или Telegram MiniApp, подключаем оплату по СБП, доставку и загружаем товары.</p>
                 </div>
 
-                <!-- Шаг 4 -->
-                <div class="step-card">
-                    <div class="step-card__top">
-                        <span class="step-num">04</span>
-                        <span class="step-label">ЗАПУСК</span>
+                <div class="arch-cell">
+                    <div class="arch-cell__top">
+                        <span class="mono-num">04</span>
+                        <span class="mono-label">ЗАПУСК</span>
                     </div>
-                    <h4>Запуск продаж</h4>
-                    <p>Открываем сайт для клиентов, запускаем рекламу и помогаем легко обработать первые поступившие заказы.</p>
+                    <h3>Открываем продажи</h3>
+                    <p>Публикуем проект, проверяем прием платежей и передаем вам все исходники и инструкции.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Гарантии и доверие -->
-    <section id="guarantee" class="section guarantee">
+    <!-- 04 // Гарантии -->
+    <section id="guarantee" class="section">
         <div class="container">
-            <div class="guarantee-box">
-                <div class="guarantee-box__header">
-                    <span class="section-tag">[ ВАША БЕЗОПАСНОСТЬ ]</span>
-                    <h2>Почему с нами спокойно работать</h2>
-                    <p>Мы понимаем, что вы только начинаете и хотите быть уверены в каждом шаге.</p>
+            <div class="section-head">
+                <span class="section-tag">[ 04 // ГАРАНТИИ ]</span>
+                <h2>Спокойная и прозрачная работа</h2>
+                <p>Работаем открыто, чтобы вы всегда контролировали результат и сроки.</p>
+            </div>
+
+            <div class="arch-grid arch-grid--4">
+                <div class="arch-cell">
+                    <div class="guar-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="m9 12 2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h3>Официальная сделка</h3>
+                    <p>К каждой оплате выдается электронный чек с QR-кодом. Все договоренности зафиксированы.</p>
                 </div>
 
-                <div class="guarantee-grid">
-                    <!-- Гарантия 1 -->
-                    <div class="guar-item">
-                        <div class="guar-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                                <path d="m9 12 2 2 4-4"/>
-                            </svg>
-                        </div>
-                        <h4>Официальная сделка</h4>
-                        <p>Работаем легально: к каждой оплате вы моментально получаете государственный электронный чек с QR-кодом. Ваши договоренности защищены законом.</p>
+                <div class="arch-cell">
+                    <div class="guar-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+                            <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+                        </svg>
                     </div>
+                    <h3>Бесплатные правки</h3>
+                    <p>Дорабатываем детали макета и сайта, пока результат полностью вас не устроит.</p>
+                </div>
 
-                    <!-- Гарантия 2 -->
-                    <div class="guar-item">
-                        <div class="guar-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
-                                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
-                            </svg>
-                        </div>
-                        <h4>Бесплатные правки</h4>
-                        <p>Мы дорабатываем сайт и дизайн до тех пор, пока результат вам действительно не понравится.</p>
+                <div class="arch-cell">
+                    <div class="guar-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                            <path d="M8 10h.01M12 10h.01M16 10h.01"/>
+                        </svg>
                     </div>
+                    <h3>Всегда на связи</h3>
+                    <p>Отвечаем простым языком без сложных терминов. Вы всегда знаете текущий статус работы.</p>
+                </div>
 
-                    <!-- Гарантия 3 -->
-                    <div class="guar-item">
-                        <div class="guar-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-                                <path d="M8 10h.01M12 10h.01M16 10h.01"/>
-                            </svg>
-                        </div>
-                        <h4>Всегда на связи</h4>
-                        <p>Отвечаем на любые вопросы простым языком без заумных терминов. Вы всегда знаете статус работы.</p>
+                <div class="arch-cell">
+                    <div class="guar-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="18" height="11" x="3" y="11" rx="2" ry="2"/>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                        </svg>
                     </div>
-
-                    <!-- Гарантия 4 -->
-                    <div class="guar-item">
-                        <div class="guar-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                                <rect width="18" height="11" x="3" y="11" rx="2" ry="2"/>
-                                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
-                            </svg>
-                        </div>
-                        <h4>Все доступы остаются у вас</h4>
-                        <p>Сайт, соцсети и все исходные файлы дизайна полностью принадлежат вам. Никаких привязок.</p>
-                    </div>
+                    <h3>Доступы у вас</h3>
+                    <p>Домен, код сайта, бот и все исходники дизайна полностью принадлежат вашему бренду.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Контакты -->
+    <!-- 05 // Контакты -->
     <section id="contact" class="section contact">
         <div class="container contact-container">
             <div class="contact-text">
-                <span class="section-tag">[ СВЯЗЬ С НАМИ ]</span>
+                <span class="section-tag">[ 05 // КОНТАКТЫ ]</span>
                 <h2>Есть идея для бренда одежды? Давайте обсудим!</h2>
-                <p>Нажмите кнопку справа и ответьте на 3 коротких вопроса. Мы изучим задачу и свяжемся с вами в удобном мессенджере.</p>
-                
+                <p>Пройдите быстрый опрос из 3 вопросов, чтобы мы поняли вашу задачу, либо напишите напрямую в Telegram.</p>
+
                 <div class="contact-direct">
-                    <span class="contact-direct__label">Наш Telegram-канал и кейсы:</span>
+                    <span class="contact-direct__label">НАШИ СОЦ СЕТИ</span>
                     <a href="https://t.me/monomode_agency" target="_blank" rel="noopener" class="contact-direct__link">
                         <span class="tg-badge-dot"></span>
-                        <span>@monomode_agency</span>
+                        <span>Канал: @monomode_agency</span>
                         <span class="contact-direct__arrow">↗</span>
                     </a>
                 </div>
             </div>
+
             <div class="contact-card">
                 <div class="contact-card__title">Оставить заявку на проект:</div>
-                <button class="contact-btn open-modal-btn">
-                    <span>Обсудить проект</span>
-                    <span class="contact-btn__arrow">→</span>
+                <button class="btn btn--primary btn--full open-modal-btn">
+                    <span>Ответить на 3 вопроса ↗</span>
                 </button>
-                <p class="contact-card__hint">Быстрый опрос из 3 вопросов · Ответим в удобный для вас мессенджер</p>
+                <a href="https://t.me/monomode_agency" target="_blank" rel="noopener" class="btn btn--secondary btn--full">
+                    <span>Написать в Telegram напрямую ↗</span>
+                </a>
+                <p class="contact-card__hint">Быстрый опрос · Ответим в удобный для вас мессенджер</p>
             </div>
         </div>
     </section>
@@ -502,19 +404,19 @@
         <div class="container footer-inner">
             <div class="footer-col">
                 <span class="footer-brand">MONOMODE</span>
-                <p class="footer-sub">Digital-агентство для брендов одежды. Сайты, дизайн и продвижение.</p>
-                <a href="https://t.me/monomode_agency" target="_blank" rel="noopener" class="footer-tg-link">Канал в Telegram: @monomode_agency ↗</a>
+                <p class="footer-sub">Digital-агентство для брендов одежды. Сайты, Telegram MiniApp и дизайн.</p>
+                <a href="https://t.me/monomode_agency" target="_blank" rel="noopener" class="footer-tg-link">Telegram-канал: @monomode_agency ↗</a>
             </div>
             <div class="footer-col footer-links">
                 <a href="#about">О нас</a>
-                <a href="#showcase">Что оформляем</a>
-                <a href="#services">Услуги</a>
-                <a href="#steps">Процесс</a>
+                <a href="#services">Услуги и цены</a>
+                <a href="#steps">Процесс работы</a>
                 <a href="#guarantee">Гарантии</a>
+                <a href="#contact">Контакты</a>
                 <a href="#" class="open-privacy-btn">Политика конфиденциальности</a>
             </div>
             <div class="footer-col footer-copy">
-                <span>© 2026 MONOMODE. Все права защищены.</span>
+                <span>© 2026 MONOMODE DIGITAL AGENCY. Все права защищены.</span>
                 <span>Оператор ПДн по 152-ФЗ РФ.</span>
                 <span class="delete-request-text">Связь и отзыв согласий: <a href="mailto:monomode.agency@gmail.com">monomode.agency@gmail.com</a></span>
             </div>
@@ -525,47 +427,47 @@
     <div class="modal-overlay" id="quizModal" aria-hidden="true">
         <div class="modal-window">
             <button class="modal-close" id="modalClose" aria-label="Закрыть окно">&times;</button>
-            
+
             <div class="quiz-container">
-                <!-- Полоса прогресса -->
                 <div class="quiz-progress">
                     <div class="quiz-progress__bar" id="progressBar"></div>
                 </div>
-                
+
                 <form id="quizForm" action="https://api.web3forms.com/submit" method="POST">
                     <input type="hidden" name="access_key" value="17910251-e6b0-4fd5-82e5-389dd2ccc7ec">
-                    <input type="hidden" name="subject" value="🔥 Новая заявка на проект MONOMODE!">
+                    <input type="hidden" name="subject" value="Новая заявка на проект MONOMODE">
                     <input type="hidden" name="from_name" value="Сайт MONOMODE">
                     <input type="hidden" name="Цель обращения" id="hiddenGoal" value="">
                     <input type="hidden" name="Описание идеи" id="hiddenIdea" value="">
                     <input type="hidden" name="Канал связи" id="hiddenChannel" value="">
                     <input type="hidden" name="Контакт клиента" id="hiddenContact" value="">
-                    <!-- Вопрос 1: Цель -->
+
+                    <!-- Вопрос 1 -->
                     <div class="quiz-step active" data-step="1">
                         <span class="quiz-step-tag">ВОПРОС 1 ИЗ 3</span>
                         <h3 class="quiz-title">С какой целью вы обращаетесь?</h3>
                         <p class="quiz-subtitle">Выберите подходящий формат взаимодействия:</p>
-                        
+
                         <div class="quiz-options">
                             <label class="quiz-option">
                                 <input type="radio" name="goal" value="Сотрудничество / Создать сайт и продвижение" checked>
                                 <span class="quiz-option__box">
-                                    <span class="option-name">Сотрудничество: сайт или продвижение</span>
-                                    <span class="option-info">Разработка интернет-магазина, дизайн или реклама</span>
+                                    <span class="option-name">Сайт-каталог или Telegram MiniApp</span>
+                                    <span class="option-info">Разработка интернет-магазина, витрины или редизайн</span>
                                 </span>
                             </label>
                             <label class="quiz-option">
                                 <input type="radio" name="goal" value="Запуск бренда одежды под ключ">
                                 <span class="quiz-option__box">
                                     <span class="option-name">Запуск бренда одежды «под ключ»</span>
-                                    <span class="option-info">Полный цикл: стиль, витрина, запуск продаж</span>
+                                    <span class="option-info">Полный цикл: стиль, витрина, оформление соцсетей</span>
                                 </span>
                             </label>
                             <label class="quiz-option">
-                                <input type="radio" name="goal" value="Партнерство / Коллаборация">
+                                <input type="radio" name="goal" value="Дизайн логотипа, принтов или соцсетей">
                                 <span class="quiz-option__box">
-                                    <span class="option-name">Партнерство или коллаборация</span>
-                                    <span class="option-info">Совместные релизы, проекты или деловые предложения</span>
+                                    <span class="option-name">Дизайн логотипа, принтов или соцсетей</span>
+                                    <span class="option-info">Графика для вещей, айдентика и визуальная упаковка</span>
                                 </span>
                             </label>
                             <label class="quiz-option">
@@ -582,12 +484,12 @@
                         </div>
                     </div>
 
-                    <!-- Вопрос 2: Описание идеи -->
+                    <!-- Вопрос 2 -->
                     <div class="quiz-step" data-step="2">
                         <span class="quiz-step-tag">ВОПРОС 2 ИЗ 3</span>
                         <h3 class="quiz-title">Кратко опишите вашу идею</h3>
                         <p class="quiz-subtitle">Какую одежду планируете выпускать, что уже есть или что требуется сделать?</p>
-                        
+
                         <div class="quiz-field">
                             <textarea class="quiz-textarea" id="projectIdea" placeholder="Например: планируем выпустить оверсайз худи и футболки, нужен стильный сайт-магазин и оформление соцсетей..." rows="4"></textarea>
                         </div>
@@ -598,18 +500,17 @@
                         </div>
                     </div>
 
-                    <!-- Вопрос 3: Выбор способа связи (VK / Telegram / WhatsApp) -->
+                    <!-- Вопрос 3 -->
                     <div class="quiz-step" data-step="3">
                         <span class="quiz-step-tag">ВОПРОС 3 ИЗ 3</span>
                         <h3 class="quiz-title">Где вам удобнее пообщаться?</h3>
                         <p class="quiz-subtitle">Выберите подходящий мессенджер или соцсеть:</p>
-                        
-                        <!-- Формат выбора мессенджера -->
+
                         <div class="channel-selector">
                             <label class="channel-pill">
                                 <input type="radio" name="contactType" value="Telegram" checked>
                                 <span class="channel-box">
-                                    <span class="channel-icon">✈</span>
+                                    <span class="channel-icon">TG</span>
                                     <span class="channel-title">Telegram</span>
                                 </span>
                             </label>
@@ -630,7 +531,7 @@
                         </div>
 
                         <div class="quiz-field">
-                            <label class="field-label" id="contactFieldLabel">Укажите контакт для связи:</label>
+                            <label class="field-label" id="contactFieldLabel">Укажите ваш контакт в Telegram:</label>
                             <input type="text" class="quiz-input" id="contactChannel" placeholder="@username в Telegram" required>
                         </div>
 
@@ -666,11 +567,11 @@
             <div class="privacy-container">
                 <h3>Политика обработки персональных данных</h3>
                 <span class="privacy-date">Редакция от 2026 года // Соответствие 152-ФЗ РФ</span>
-                
+
                 <div class="privacy-scroll-content">
                     <h4>1. Общие положения</h4>
                     <p>Настоящая Политика обработки персональных данных (далее — «Политика») определяет порядок сбора, хранения и обработки персональных данных пользователей сайта MONOMODE в соответствии с Федеральным законом РФ от 27.07.2006 № 152-ФЗ «О персональных данных».</p>
-                    
+
                     <h4>2. Категории собираемых данных</h4>
                     <p>Оператор обрабатывает следующие персональные данные, предоставляемые Пользователем добровольно при заполнении форм на сайте:</p>
                     <ul>
